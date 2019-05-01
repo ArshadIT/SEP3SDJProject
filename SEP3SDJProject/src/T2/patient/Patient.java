@@ -6,59 +6,67 @@ public class Patient implements IPatient, Serializable{
 
 	private String FirstName;
 	private String LastName;
-	private String CprNr;
+	private String CprNo;
 	private String Email;
 	private String Password;
-	public Patient(String firstName, String lastName, String cprNr, String email, String password) {
+	public Patient(String firstName, String lastName, String CprNo, String email, String password) {
 
-		FirstName = firstName;
-		LastName = lastName;
-		CprNr = cprNr;
-		Email = email;
-		Password = password;
+		this.FirstName = firstName;
+		this.LastName = lastName;
+		this.CprNo = CprNo;
+		this.Email = email;
+		this.Password = password;
 	}
 	
-	public String getFirstName() {
-		return FirstName;
-	}
 
-	public String getLastName() {
-		return LastName;
-	}
-
-	public String getCprNr() {
-		return CprNr;
-	}
-
-	public String getEmail() {
-		return Email;
-	}
-
-	public String getPassword() {
-		return Password;
-	}
 
 	@Override
 	public String toString() {
-		return "Patient [FirstName=" + FirstName + ", LastName=" + LastName + ", CprNr=" + CprNr + ", Email=" + Email
+		return "Patient [FirstName=" + FirstName + ", LastName=" + LastName + ", CprNo=" + CprNo + ", Email=" + Email
 				+ ", Password=" + Password + "]";
 	}
+
+
+
 	@Override
-	public Patient getAllPatient() {
+	public String getFirstname() {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+
 	@Override
-	public Patient getPatient() {
+	public String getLastName() {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+
 	@Override
-	public Patient getPatientByCprNr() {
+	public String getCprNo() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
+
+
+	@Override
+	public String Email() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	@Override
+	public String getPassword() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+			
 	
 	
 }
